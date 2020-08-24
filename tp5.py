@@ -1,18 +1,61 @@
+#!/usr/bin/env python
 
+# Import modules
 from turtle import *
 
-print ("tracer un octogone ")
+# affichage du message d'entré
+print ("**** tracer un octogone ***")
 
+# on initialise la taille de la fenetre
 setup(600, 500)
+
+# on affiche le titre de notre fenetre
 title("un octogone trace ( la tortue )")
+
+
+# on initialise la couleur de l'arriere plan de notre fenetre
 bgcolor('light blue')
-dot(10, 'black')
-up()
-goto(0, -50)
-down()
+
+#la couleur du tracé
 color(('red'))
+# l'epaisseur du tracé
 width(3)
-circle(50, steps=8)
+
+# en utilisant la boucle for : 
+# on defini la largeur en pixel de notre 
+longueur_cote = 50
+
+print ("ce trace est fait avec la boucle for : ")
+
+# avec la boucle for : on initialise notre point de depart i pour que sa fait 8 coté
+for i in range(8):
+    # on avance pour tracer 50 pixel de coté
+    forward(longueur_cote)  #Côté
+    # on tourne avec une angle de 360/80 pour faire 8 coté
+    left(360/8)  #Angle
+
+i = int(0)
+input("Appuyez sur une touche pour tracer avec la boucle while :")
+
+#on reinistialise notre tracer
+reset()
+
+# affichage du msg
+print ("ce trace est fait avec la boucle while : ")
+
+#la couleur du tracé
+color(('blue'))
+# l'epaisseur du tracé
+width(5)
+
+while i < 8:
+    # on avance pour tracer 50 pixel de coté
+    forward(longueur_cote)  #Côté
+    # on tourne avec une angle de 360/80 pour faire 8 coté
+    left(360/8)  #Angle
+    # on incremente notre variable
+    i = i + 1
+
 
 # pour empecher la fermeture
 mainloop()

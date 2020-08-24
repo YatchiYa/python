@@ -1,11 +1,9 @@
 #!/usr/bin/python
 
-# Hello world python program
-
 import math
 
 # a*x**2 + b*x + c un trinome du second degre.
-print "Soit une equation de la forme : ax^2 + bx + c = 0"
+print ("Soit une equation de la forme : ax^2 + bx + c = 0")
 
 # On rentre les valeurs de a, b et c.
 # On souhaite que a, b et c soient des nombres reels (float en anglais)
@@ -36,4 +34,5 @@ else:
         print("L'equation a deux solutions solutions.")
         x1 = (-b - math.sqrt(delta)) /(2*a)
         x2 = (-b + math.sqrt(delta)) /(2*a)
-        print ("Les solutions sont x1 = ", x1, " et ", x2)
+        print ("La solution x1 est  = ",x1)
+        print ("La solution x2 est  = ",x2)

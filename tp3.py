@@ -3,6 +3,7 @@
 # Import modules
 import math
 
+# affichage 
 print "calcule du quotient et du resultat"
 
 # on saisie a et b
