@@ -12,8 +12,7 @@ i = int(1)
 print ("les multiple de 7 avec etoile (*) sur les multiple de 3")
 
 # pour mettre un espace entre les deux bloc ; 2 retour a la ligne juste pour l'affichage
-print
-print
+print ("")
 
 # on entre dans la boucle why
 while (i <= 20):

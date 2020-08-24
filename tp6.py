@@ -44,6 +44,7 @@ for i in range:
 
 
 # l'affichage final
-print
+# un retour a la ligne ene plus
+print ("")
 print ("il y'a (", ret, ") facons de faire", a, "avec deux des")
 print ("combinaison possible = ", ret)
