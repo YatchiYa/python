@@ -26,6 +26,8 @@ width(3)
 longueur_cote = 50
 
 print ("ce trace est fait avec la boucle for : ")
+print ("angle = ", 360/80)
+print ("nb = ", 8)
 
 # avec la boucle for : on initialise notre point de depart i pour que sa fait 8 coté
 for i in range(8):
@@ -42,6 +44,8 @@ reset()
 
 # affichage du msg
 print ("ce trace est fait avec la boucle while : ")
+print ("angle = ", 360/80)
+print ("nb = ", 8)
 
 #la couleur du tracé
 color(('blue'))
